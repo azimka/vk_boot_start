@@ -1,0 +1,27 @@
+plugins {
+    id 'org.springframework.boot' version '1.5.8.RELEASE'
+}
+
+description = "VK interactive bot"
+
+apply plugin: "java"
+
+group = 'ru.multicon.vkbot'
+version = '0.1-SNAPSHOT'
+
+ext {
+}
+
+repositories {
+    jcenter()
+    mavenCentral()
+    mavenLocal()
+}
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+dependencies {
+    compile "org.springframework.boot:spring-boot-starter-web"
+    compile group: 'com.vk.api', name: 'sdk', version: '0.5.9'
+}
