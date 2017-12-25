@@ -25,3 +25,5 @@ dependencies {
     compile "org.springframework.boot:spring-boot-starter-web"
     compile group: 'com.vk.api', name: 'sdk', version: '0.5.9'
 }
+
+bootRepackage.enabled = false
